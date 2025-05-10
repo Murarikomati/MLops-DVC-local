@@ -6,7 +6,8 @@ data = {'Name':['Anil', 'Ramesh', 'Naresh'],
         'City': ['New York', 'Los Angeles', 'Chicago']
         }
 df = pd.DataFrame(data)
-# df.loc[len(df.index)] = {"Name": "V3", "Age": 20, "City":"Laknow"}
+# new row gets added to table
+df.loc[len(df.index)] = {"Name": "V3", "Age": 20, "City":"Laknow"}
 data_dir = 'data'
 os.makedirs(data_dir, exist_ok=True)
 
